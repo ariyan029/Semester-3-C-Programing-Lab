@@ -1,35 +1,34 @@
 #include <stdio.h>
 #include <math.h>
 
-int isArmstrong(int num) {
-    int original = num, sum = 0, digits = 0, temp = num;
-
-    // Count digits
-    while (temp != 0) {
-        digits++;           
-        temp /= 10;
-    }
-
-    temp = num;
-    while (temp != 0) {
-        int digit = temp % 10;
-        sum += pow(digit, digits);
-        temp /= 10;
-    }
-
-    return (sum == original);
-}
-
 int main() {
-    int lower, upper;
-    printf("Enter lower and upper range: ");
-    scanf("%d %d", &lower, &upper);
+    int num, originalNum, remainder, result = 0, n = 0;
 
-    printf("Armstrong numbers between %d and %d are:\n", lower, upper);
-    for (int i = lower; i <= upper; i++) {
-        if (isArmstrong(i)) {
-            printf("%d\n", i);
-        }
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+    // Count the number of digits
+    while (originalNum != 0) {
+        originalNum /= 10;
+        ++n;
     }
+
+    originalNum = num;
+
+    // Calculate the sum of the nth powers of its digits
+    while (originalNum != 0) {
+        remainder = originalNum % 10;
+        result += pow(remainder, n);
+        originalNum /= 10;
+    }
+
+    // Check if the number is an Armstrong number
+    if (result == num)
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
+
     return 0;
 }
