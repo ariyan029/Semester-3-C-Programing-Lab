@@ -1,0 +1,4 @@
+/*
+write a program where a function updates the salary of an employee using pointer 
+to store structure 
+*/
