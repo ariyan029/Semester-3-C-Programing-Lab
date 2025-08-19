@@ -58,6 +58,7 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "stdio.h": "c",
-    "Problem1.C": "cpp"
+    "Problem1.C": "cpp",
+    "string": "cpp"
   }
 }

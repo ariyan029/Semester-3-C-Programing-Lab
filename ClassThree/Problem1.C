@@ -24,6 +24,7 @@ void showMenu();
 std::vector<Student> readAllRecords() {
     std::vector<Student> records;
     std::ifstream inFile(FILENAME, std::ios::in | std::ios::binary);
+    
     if (!inFile) {
         std::cerr << "Error opening file for reading!" << std::endl;
         return records; // Return empty vector if file can't be read
@@ -41,6 +42,7 @@ std::vector<Student> readAllRecords() {
 // Helper function to write all records to the file
 void writeAllRecords(const std::vector<Student>& records) {
     std::ofstream outFile(FILENAME, std::ios::out | std::ios::binary);
+    
     if (!outFile) {
         std::cerr << "Error opening file for writing!" << std::endl;
         return;
@@ -114,6 +116,7 @@ void addRecord() {
 
 void displayRecords() {
     std::vector<Student> records = readAllRecords();
+    
     if (records.empty()) {
         std::cout << "No records to display." << std::endl;
         return;
