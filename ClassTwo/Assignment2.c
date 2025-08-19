@@ -52,3 +52,41 @@ int main() {
 
     return 0;
 }
+
+/*
+--- Enter Details for 3 Books ---
+
+Enter details for Book 1:
+  Title: ATOMIC HABITS
+  Author: JHON ALLIE
+  Price: 999
+
+Enter details for Book 2:
+  Title: THINK AND GROW RICH
+  Author: NEPOLEAN HILL
+  Price: 400
+
+Enter details for Book 3:
+  Title: PSYCHOLOGY OF MONEY 
+  Author: CRISTOPHER NOLAN
+  Price: 699  
+
+
+--- Displaying Book Details ---
+
+Details of Book 1:
+  Title: ATOMIC HABITS
+  Author: JHON ALLIE
+  Price: 999.00
+
+Details of Book 2:
+  Title: THINK AND GROW RICH
+  Author: NEPOLEAN HILL
+  Price: 400.00
+
+Details of Book 3:
+  Title: PSYCHOLOGY OF MONEY 
+  Author: CRISTOPHER NOLAN
+  Price: 699.00
+
+*/

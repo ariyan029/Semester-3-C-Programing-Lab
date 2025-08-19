@@ -23,7 +23,7 @@ int main() {
     struct Employee emp1;
 
     // Initialize the employee's details
-    strcpy(emp1.name, "John Doe");
+    strcpy(emp1.name, "Bhusan kumar");
     emp1.id = 101;
     emp1.salary = 50000.0f;
 
@@ -48,3 +48,16 @@ int main() {
 
     return 0;
 }
+/*
+Employee Name: Bhusan Kumar
+Employee ID: 101
+Initial Salary: 50000.00
+
+Updating salary to 60000.00...
+
+Updated Details:
+Employee Name: Bhusan kumar
+Employee ID: 101
+Updated Salary: 60000.00
+
+*/
